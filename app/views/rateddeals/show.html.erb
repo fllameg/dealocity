@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Store name:</b>
+  <%= @rateddeal.store_name %>
+</p>
+
+<p>
+  <b>Is bar:</b>
+  <%= @rateddeal.is_bar %>
+</p>
+
+<p>
+  <b>Deal name:</b>
+  <%= @rateddeal.deal_name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @rateddeal.price %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @rateddeal.day %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @rateddeal.location %>
+</p>
+
+<p>
+  <b>Thumbs up:</b>
+  <%= @rateddeal.thumbs_up %>
+</p>
+
+
+<%= link_to 'Edit', edit_rateddeal_path(@rateddeal) %> |
+<%= link_to 'Back', rateddeals_path %>

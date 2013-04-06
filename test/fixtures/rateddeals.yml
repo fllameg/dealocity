@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  store_name: MyString
+  is_bar: false
+  deal_name: MyString
+  price: 1.5
+  day: MyString
+  location: MyString
+  thumbs_up: false
+
+two:
+  store_name: MyString
+  is_bar: false
+  deal_name: MyString
+  price: 1.5
+  day: MyString
+  location: MyString
+  thumbs_up: false

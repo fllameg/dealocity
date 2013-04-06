@@ -1,0 +1,23 @@
+<h1>Listing herokus</h1>
+
+<table>
+  <tr>
+    <th>Logs</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @herokus.each do |heroku| %>
+  <tr>
+    <td><%= heroku.logs %></td>
+    <td><%= link_to 'Show', heroku %></td>
+    <td><%= link_to 'Edit', edit_heroku_path(heroku) %></td>
+    <td><%= link_to 'Destroy', heroku, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Heroku', new_heroku_path %>

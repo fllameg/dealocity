@@ -1,0 +1,35 @@
+<h1>Listing rateddeals</h1>
+
+<table>
+  <tr>
+    <th>Store name</th>
+    <th>Is bar</th>
+    <th>Deal name</th>
+    <th>Price</th>
+    <th>Day</th>
+    <th>Location</th>
+    <th>Thumbs up</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rateddeals.each do |rateddeal| %>
+  <tr>
+    <td><%= rateddeal.store_name %></td>
+    <td><%= rateddeal.is_bar %></td>
+    <td><%= rateddeal.deal_name %></td>
+    <td><%= rateddeal.price %></td>
+    <td><%= rateddeal.day %></td>
+    <td><%= rateddeal.location %></td>
+    <td><%= rateddeal.thumbs_up %></td>
+    <td><%= link_to 'Show', rateddeal %></td>
+    <td><%= link_to 'Edit', edit_rateddeal_path(rateddeal) %></td>
+    <td><%= link_to 'Destroy', rateddeal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rateddeal', new_rateddeal_path %>

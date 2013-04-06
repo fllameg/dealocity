@@ -1,4 +1,7 @@
 Db::Application.routes.draw do
+  resources :rateddeals
+
+
   resources :deals
 
 

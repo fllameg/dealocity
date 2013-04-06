@@ -1,0 +1,45 @@
+<%= form_for(@rateddeal) do |f| %>
+  <% if @rateddeal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rateddeal.errors.count, "error") %> prohibited this rateddeal from being saved:</h2>
+
+      <ul>
+      <% @rateddeal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :store_name %><br />
+    <%= f.text_field :store_name %>
+  </div>
+  <div class="field">
+    <%= f.label :is_bar %><br />
+    <%= f.check_box :is_bar %>
+  </div>
+  <div class="field">
+    <%= f.label :deal_name %><br />
+    <%= f.text_field :deal_name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :day %><br />
+    <%= f.text_field :day %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :thumbs_up %><br />
+    <%= f.check_box :thumbs_up %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

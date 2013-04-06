@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Logs:</b>
+  <%= @heroku.logs %>
+</p>
+
+
+<%= link_to 'Edit', edit_heroku_path(@heroku) %> |
+<%= link_to 'Back', herokus_path %>
