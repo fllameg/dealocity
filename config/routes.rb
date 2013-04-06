@@ -1,4 +1,7 @@
 Db::Application.routes.draw do
+  resources :list_of_deals
+
+
   resources :comments
 
 

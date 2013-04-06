@@ -1,0 +1,37 @@
+<h1>Listing list_of_deals</h1>
+
+<table>
+  <tr>
+    <th>Store name</th>
+    <th>Is bar</th>
+    <th>Deal name</th>
+    <th>Price</th>
+    <th>Day</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Thumbs up</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @list_of_deals.each do |list_of_deal| %>
+  <tr>
+    <td><%= list_of_deal.store_name %></td>
+    <td><%= list_of_deal.is_bar %></td>
+    <td><%= list_of_deal.deal_name %></td>
+    <td><%= list_of_deal.price %></td>
+    <td><%= list_of_deal.day %></td>
+    <td><%= list_of_deal.address %></td>
+    <td><%= list_of_deal.city %></td>
+    <td><%= list_of_deal.thumbs_up %></td>
+    <td><%= link_to 'Show', list_of_deal %></td>
+    <td><%= link_to 'Edit', edit_list_of_deal_path(list_of_deal) %></td>
+    <td><%= link_to 'Destroy', list_of_deal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New List of deal', new_list_of_deal_path %>

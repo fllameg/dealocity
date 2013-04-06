@@ -1,0 +1,49 @@
+<%= form_for(@list_of_deal) do |f| %>
+  <% if @list_of_deal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@list_of_deal.errors.count, "error") %> prohibited this list_of_deal from being saved:</h2>
+
+      <ul>
+      <% @list_of_deal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :store_name %><br />
+    <%= f.text_field :store_name %>
+  </div>
+  <div class="field">
+    <%= f.label :is_bar %><br />
+    <%= f.check_box :is_bar %>
+  </div>
+  <div class="field">
+    <%= f.label :deal_name %><br />
+    <%= f.text_field :deal_name %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :day %><br />
+    <%= f.text_field :day %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :thumbs_up %><br />
+    <%= f.check_box :thumbs_up %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
