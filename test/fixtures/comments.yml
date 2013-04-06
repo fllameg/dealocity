@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  store_name: MyString
+  deal_name: MyString
+  thumbs_up: false
+  comments: MyText
+
+two:
+  store_name: MyString
+  deal_name: MyString
+  thumbs_up: false
+  comments: MyText
