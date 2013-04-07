@@ -1,0 +1,49 @@
+<%= form_for(@dealocity_deal) do |f| %>
+  <% if @dealocity_deal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dealocity_deal.errors.count, "error") %> prohibited this dealocity_deal from being saved:</h2>
+
+      <ul>
+      <% @dealocity_deal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :store_name %><br />
+    <%= f.text_field :store_name %>
+  </div>
+  <div class="field">
+    <%= f.label :is_bar %><br />
+    <%= f.check_box :is_bar %>
+  </div>
+  <div class="field">
+    <%= f.label :deal_description %><br />
+    <%= f.text_field :deal_description %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :rank %><br />
+    <%= f.text_field :rank %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

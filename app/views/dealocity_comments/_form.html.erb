@@ -1,0 +1,33 @@
+<%= form_for(@dealocity_comment) do |f| %>
+  <% if @dealocity_comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dealocity_comment.errors.count, "error") %> prohibited this dealocity_comment from being saved:</h2>
+
+      <ul>
+      <% @dealocity_comment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :store_name %><br />
+    <%= f.text_field :store_name %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :person_name %><br />
+    <%= f.text_field :person_name %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

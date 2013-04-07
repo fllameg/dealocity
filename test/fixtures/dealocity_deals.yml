@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  store_name: MyString
+  is_bar: false
+  deal_description: MyString
+  price: 1.5
+  address: MyString
+  city: MyString
+  phone: 1
+  rank: 1.5
+
+two:
+  store_name: MyString
+  is_bar: false
+  deal_description: MyString
+  price: 1.5
+  address: MyString
+  city: MyString
+  phone: 1
+  rank: 1.5

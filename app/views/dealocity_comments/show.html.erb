@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Store name:</b>
+  <%= @dealocity_comment.store_name %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @dealocity_comment.rating %>
+</p>
+
+<p>
+  <b>Person name:</b>
+  <%= @dealocity_comment.person_name %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @dealocity_comment.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_dealocity_comment_path(@dealocity_comment) %> |
+<%= link_to 'Back', dealocity_comments_path %>

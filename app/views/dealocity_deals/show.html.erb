@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Store name:</b>
+  <%= @dealocity_deal.store_name %>
+</p>
+
+<p>
+  <b>Is bar:</b>
+  <%= @dealocity_deal.is_bar %>
+</p>
+
+<p>
+  <b>Deal description:</b>
+  <%= @dealocity_deal.deal_description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @dealocity_deal.price %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @dealocity_deal.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @dealocity_deal.city %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @dealocity_deal.phone %>
+</p>
+
+<p>
+  <b>Rank:</b>
+  <%= @dealocity_deal.rank %>
+</p>
+
+
+<%= link_to 'Edit', edit_dealocity_deal_path(@dealocity_deal) %> |
+<%= link_to 'Back', dealocity_deals_path %>

@@ -1,0 +1,29 @@
+<h1>Listing dealocity_comments</h1>
+
+<table>
+  <tr>
+    <th>Store name</th>
+    <th>Rating</th>
+    <th>Person name</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dealocity_comments.each do |dealocity_comment| %>
+  <tr>
+    <td><%= dealocity_comment.store_name %></td>
+    <td><%= dealocity_comment.rating %></td>
+    <td><%= dealocity_comment.person_name %></td>
+    <td><%= dealocity_comment.comment %></td>
+    <td><%= link_to 'Show', dealocity_comment %></td>
+    <td><%= link_to 'Edit', edit_dealocity_comment_path(dealocity_comment) %></td>
+    <td><%= link_to 'Destroy', dealocity_comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dealocity comment', new_dealocity_comment_path %>
