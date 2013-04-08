@@ -4,7 +4,7 @@ class CreateListOfDeals < ActiveRecord::Migration
       t.string :store_name
       t.boolean :is_bar
       t.string :deal_name
-      t.float :price
+      t.string :price
       t.string :day
       t.string :address
       t.string :city
