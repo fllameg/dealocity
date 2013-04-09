@@ -1,0 +1,33 @@
+<h1>Listing v2dealocity_deals</h1>
+
+<table>
+  <tr>
+    <th>Store name</th>
+    <th>Is bar</th>
+    <th>Deal description</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @v2dealocity_deals.each do |v2dealocity_deal| %>
+  <tr>
+    <td><%= v2dealocity_deal.store_name %></td>
+    <td><%= v2dealocity_deal.is_bar %></td>
+    <td><%= v2dealocity_deal.deal_description %></td>
+    <td><%= v2dealocity_deal.address %></td>
+    <td><%= v2dealocity_deal.city %></td>
+    <td><%= v2dealocity_deal.phone %></td>
+    <td><%= link_to 'Show', v2dealocity_deal %></td>
+    <td><%= link_to 'Edit', edit_v2dealocity_deal_path(v2dealocity_deal) %></td>
+    <td><%= link_to 'Destroy', v2dealocity_deal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New V2dealocity deal', new_v2dealocity_deal_path %>

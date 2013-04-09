@@ -1,4 +1,10 @@
 Db::Application.routes.draw do
+  resources :tables
+
+
+  resources :v2dealocity_deals
+
+
   resources :dealocity_deals
 
 

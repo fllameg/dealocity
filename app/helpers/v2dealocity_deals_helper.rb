@@ -1,0 +1,2 @@
+module V2dealocityDealsHelper
+end

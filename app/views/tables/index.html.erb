@@ -1,0 +1,33 @@
+<h1>Listing tables</h1>
+
+<table>
+  <tr>
+    <th>Store name</th>
+    <th>Is bar</th>
+    <th>Deal description</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tables.each do |table| %>
+  <tr>
+    <td><%= table.store_name %></td>
+    <td><%= table.is_bar %></td>
+    <td><%= table.deal_description %></td>
+    <td><%= table.address %></td>
+    <td><%= table.city %></td>
+    <td><%= table.phone %></td>
+    <td><%= link_to 'Show', table %></td>
+    <td><%= link_to 'Edit', edit_table_path(table) %></td>
+    <td><%= link_to 'Destroy', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Table', new_table_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  store_name: MyString
+  is_bar: false
+  deal_description: MyString
+  address: MyString
+  city: MyString
+  phone: MyString
+
+two:
+  store_name: MyString
+  is_bar: false
+  deal_description: MyString
+  address: MyString
+  city: MyString
+  phone: MyString

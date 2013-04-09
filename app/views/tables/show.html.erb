@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Store name:</b>
+  <%= @table.store_name %>
+</p>
+
+<p>
+  <b>Is bar:</b>
+  <%= @table.is_bar %>
+</p>
+
+<p>
+  <b>Deal description:</b>
+  <%= @table.deal_description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @table.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @table.city %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @table.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>
